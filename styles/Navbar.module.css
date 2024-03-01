@@ -1,0 +1,42 @@
+/* Navbar.module.css */
+
+
+
+
+.active {
+    color: #FF6600; /* Adjust the color for the active state */
+    position: relative;
+}
+
+.inactive {
+    color: #727200; /* Adjust the color for the inactive state */
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Position at the center */
+    transform: translateX(-50%); /* Center horizontally */
+    right: 50%; /* Position at the center */
+    transform: translatey(50%); /* Center horizontally */
+    width: 0; /* Initial width */
+    height: 2px; /* Adjust the thickness of the border */
+    background-color: #FF6600; /* Adjust the color of the border */
+    animation: expandBorder 0.6s forwards; /* Apply animation */
+}
+
+@keyframes expandBorder {
+    0% {
+        left: 50%; /* Start from the center */
+        width: 0;
+    }
+    50% {
+        left: 0; /* Move to the left edge */
+        width: 100%;
+    }
+    100% {
+        left: 0; /* Stay at the left edge */
+        width: 100%;
+    }
+}

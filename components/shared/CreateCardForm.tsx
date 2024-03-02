@@ -90,9 +90,9 @@ const handleChangeImage = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between">
+    <div className="lg:flex lg:flex-row flex flex-col lg:justify-between items-center justify-center">
         
-      <div className='flex flex-col space-y-10 w-full'>  
+      <div className='flex flex-col space-y-10 w-full items-center'>  
         <div className="flex flex-col justify-center w-1/2 px-4">
         <input
           type="file"
@@ -126,8 +126,8 @@ const handleChangeImage = () => {
       
       
       
-    <div className="downloadcard flex flex-col items-end justify-between w-full px-4 space-y-10" ref={downloadRef}>  
-      <div className=" rounded-full bg-white h-[100px] w-[100px]   ">
+    <div className="downloadcard flex flex-col items-center justify-between w-full px-4 space-y-10 mt-14" ref={downloadRef}>  
+      <div className=" rounded-full bg-white h-[100px] w-[100px] ">
         {imagePreview && (
           <>
             {/* <img src={imagePreview} alt="Selected" className="w-full h-auto" /> */}

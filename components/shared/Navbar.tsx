@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Link href='/' className={pathname === '/' ? styles.active : styles.inactive}>Home</Link>
                     <Link href='/about' className={pathname === '/about' ? styles.active : styles.inactive}>About Us</Link>
                     <DropdownMenu>
-                        <SignedIn>
+                        {/* <SignedIn> */}
                             <DropdownMenuTrigger className={pathname === '/profile' ? styles.active : styles.inactive}>Profiles</DropdownMenuTrigger>
                             <DropdownMenuContent>
                                 <DropdownMenuItem>Emerging Leaders</DropdownMenuItem>
@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <DropdownMenuItem>Emerging Politicians</DropdownMenuItem>
                                 <DropdownMenuItem>Business</DropdownMenuItem>
                             </DropdownMenuContent>
-                        </SignedIn>
+                        {/* </SignedIn> */}
                     </DropdownMenu>
                     <Link href='/contact' className={pathname === '/contact' ? styles.active : styles.inactive}>Contact Us</Link>
                 </nav>
@@ -51,11 +51,11 @@ const Navbar = () => {
                         <Link href="/sign-in">Login</Link>
                     </Button>
                 </SignedOut>
-                <SignedIn>
+                {/* <SignedIn> */}
                     <Button asChild>
                         <Link href="/createcard">Create your Card</Link>
                     </Button>
-                </SignedIn>
+                    {/* </SignedIn> */}
                 </div>
             </div>
         </div>
